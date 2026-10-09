@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sql class="agenda.app.repositories.ContactRepository">
+<sql class="io.github.filsynyster.blockforge.app.repositories.ContactRepository">
 
     <query bind="findByName">
         SELECT * FROM contacts WHERE name = ?
@@ -10,6 +10,18 @@
     </query>
 
     <query bind="findAllNative">
+        SELECT * FROM contacts
+    </query>
+
+    <query bind="findByAge">
+        SELECT * FROM contacts WHERE age > 10
+    </query>
+
+    <query bind="findByAgeGreaterThan">
+        SELECT * FROM contacts WHERE age > ?
+    </query>
+
+    <query bind="findAllAsSet">
         SELECT * FROM contacts
     </query>
 

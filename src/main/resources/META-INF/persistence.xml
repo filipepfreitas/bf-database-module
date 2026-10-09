@@ -13,7 +13,7 @@
             org.hibernate.jpa.HibernatePersistenceProvider
         </provider>
 
-        <class>agenda.app.models.Contact</class>
+        <class>io.github.filsynyster.blockforge.app.models.Contact</class>
 
         <properties>
 

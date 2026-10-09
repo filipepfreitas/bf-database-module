@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+
+    <context name="agenda-persistence">
+
+        <context-config>
+
+            <url value="jdbc:sqlite:database/data.db"/>
+            <database-provider value="sqlite" />
+            <ddl-auto value="none"/>
+            <package value="agenda" />
+            <pool-size value="5"/>
+            <connection-timeout value="30000"/>
+
+        </context-config>
+
+        <entity-config>
+
+            <package value="agenda.app.models" />
+
+        </entity-config>
+
+    </context>
+
+</persistence>

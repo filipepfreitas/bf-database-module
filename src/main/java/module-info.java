@@ -14,13 +14,14 @@ module agenda {
     requires io.github.classgraph;
     requires jakarta.persistence;
 
-    opens agenda.app.models to ormlite.jdbc;
+    opens io.github.filsynyster.blockforge.app.models to ormlite.jdbc;
     opens agenda.app.view.controller to javafx.fxml;
 
-    exports agenda.app;
-    exports agenda.database.core;
-    exports agenda.database.ormlite;
-    exports agenda.database.sql;
-    exports  agenda.database.ormlite.configuration;
-    exports agenda.database.exceptions;
+    exports io.github.filsynyster.blockforge.app;
+    exports io.github.filsynyster.blockforge.database.core;
+    exports io.github.filsynyster.blockforge.database.providers.ormlite;
+    exports io.github.filsynyster.blockforge.database.sql;
+    exports io.github.filsynyster.blockforge.database.providers.ormlite.configuration;
+    exports io.github.filsynyster.blockforge.database.exceptions;
+    exports io.github.filsynyster.blockforge.database.core.repository;
 }
